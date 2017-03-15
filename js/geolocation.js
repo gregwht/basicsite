@@ -1,6 +1,7 @@
 //JS - Geolocation
 
 var x = document.getElementById("coordinates");
+var s = document.getElementById("state");
 
 function TestGeo() {
   if (navigator.geolocation) {
@@ -19,7 +20,7 @@ function TestMap(position) {
                 "<br>Accuracy: " + position.coords.accuracy;
 
   if (latitude >= 50 && longitude <= 0 ){
-    alert("Good coordinates");
+    s.innerHTML = "Good coordinates";
     play_single_sound();
   }
 }
