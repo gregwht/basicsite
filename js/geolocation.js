@@ -21,17 +21,10 @@ function TestMap(position) {
 
   if (latitude >= 50 && longitude <= 0 ){
     s.innerHTML = "Good coordinates";
-    play_single_sound();
+    document.getElementById('audiotag1').controls = "controls";
   }
 }
 
 function error() {
   x.innerHTML = "Cannot locate user."
-}
-
-// Sound testing
-
-function play_single_sound(){
-
-  document.getElementById('audiotag1').play();
 }
