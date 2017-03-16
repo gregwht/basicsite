@@ -1,8 +1,10 @@
 //JS - Geolocation
 
+// Variables
 var x = document.getElementById("coordinates");
 var s = document.getElementById("state");
 
+// Functinos
 function TestGeo() {
   if (navigator.geolocation) {
     navigator.geolocation.watchPosition( TestMap, error, {maximumAge: 1000, timeout: 10000, enableHighAccuracy: true});
@@ -35,10 +37,9 @@ function playAudio(){
 
   var audio = document.getElementById("audiotag1");
 
-  if (audio.paused = true){
+  if (audio.paused){
       audio.play();
-  }
-  else {
+  } else {
       audio.pause();
   }
 }
