@@ -21,10 +21,22 @@ function TestMap(position) {
 
   if (latitude >= 50 && longitude <= 0 ){
     s.innerHTML = "Good coordinates";
-    document.getElementById('audiotag1').controls = "controls";
+  //  document.getElementById('audiotag1').controls = "controls";
   }
 }
 
 function error() {
   x.innerHTML = "Cannot locate user."
+}
+
+function playAudio(){
+
+  var audio = document.getElementById("audiotag1");
+
+  if (audio.paused = true){
+      audio.play();
+  }
+  else {
+      audio.pause();
+  }
 }
