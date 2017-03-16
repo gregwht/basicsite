@@ -20,8 +20,10 @@ function TestMap(position) {
                 "<br>Accuracy: " + position.coords.accuracy;
 
   if (latitude >= 50 && longitude <= 0 ){
-    s.innerHTML = "Good coordinates";
+    s.innerHTML = "You are in Parliament Square Garden. Click below to visit Brian.";
   //  document.getElementById('audiotag1').controls = "controls";
+    document.getElementById('button').disabled = false;
+
   }
 }
 
