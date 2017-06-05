@@ -22,7 +22,7 @@ function TestMap(position) {
                 "<br>Accuracy: " + position.coords.accuracy;
 
   if (latitude >= 51.500 && latitude <= 51.502 &&
-      longitude >= -0.1276 && longitude <= 0.1261 ){
+      longitude >= -0.1276 && longitude <= -0.1261 ){
     s.innerHTML = "You are in Parliament Square Garden. Click below to visit Brian.";
   //  document.getElementById('audiotag1').controls = "controls";
     document.getElementById('button').disabled = false;
