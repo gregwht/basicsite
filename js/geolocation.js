@@ -21,12 +21,8 @@ function TestMap(position) {
                 "<br>Longitude: " + position.coords.longitude +
                 "<br>Accuracy: " + position.coords.accuracy;
 
-  // if (latitude >= 51.500 && latitude <= 51.502 &&
-  //     longitude >= -0.1276 && longitude <= -0.1261 ){
-
-  if (latitude >= 0 && longitude <= 0 ){
-
-
+   if (latitude >= 51.500 && latitude <= 51.502 &&
+       longitude >= -0.1276 && longitude <= -0.1261 ){
     s.innerHTML = "You are in Parliament Square Garden. Click below to visit Brian.";
   //  document.getElementById('audiotag1').controls = "controls";
     document.getElementById('button').disabled = false;
