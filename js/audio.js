@@ -4,7 +4,7 @@
 var context = new webkitAudioContext(); // Create audio context
 var request = new XMLHttpRequest(); // Get the sound file
 
-request.open('GET', 'test.mp3', true);
+request.open('GET', 'BH Objects Single File.mp3', true);
 request.responseType = 'arraybuffer';
 
 request.onload = function() {
